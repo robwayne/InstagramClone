@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E001F52B1FD59A220021EBDC /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001F5291FD59A220021EBDC /* HomeCollectionViewCell.swift */; };
+		E001F52C1FD59A220021EBDC /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E001F52A1FD59A220021EBDC /* HomeCollectionViewCell.xib */; };
 		E0DFFF231FD53DC60046522A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFFF221FD53DC60046522A /* AppDelegate.swift */; };
 		E0DFFF251FD53DC60046522A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFFF241FD53DC60046522A /* HomeViewController.swift */; };
 		E0DFFF271FD53DC70046522A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFFF261FD53DC70046522A /* ExploreViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E001F5291FD59A220021EBDC /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E001F52A1FD59A220021EBDC /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		E0DFFF1F1FD53DC60046522A /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DFFF221FD53DC60046522A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DFFF241FD53DC60046522A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E001F5281FD599D80021EBDC /* HomeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E001F5291FD59A220021EBDC /* HomeCollectionViewCell.swift */,
+				E001F52A1FD59A220021EBDC /* HomeCollectionViewCell.xib */,
+			);
+			path = HomeCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		E0DFFF161FD53DC60046522A = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		E0DFFF3C1FD551900046522A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E001F5281FD599D80021EBDC /* HomeCollectionViewCell */,
 				E0DFFF281FD53DC70046522A /* Main.storyboard */,
 				E0DFFF3A1FD551420046522A /* ExploreCollectionViewCell.swift */,
 			);
@@ -154,6 +168,7 @@
 				E0DFFF2F1FD53DC70046522A /* LaunchScreen.storyboard in Resources */,
 				E0DFFF2C1FD53DC70046522A /* Assets.xcassets in Resources */,
 				E0DFFF2A1FD53DC70046522A /* Main.storyboard in Resources */,
+				E001F52C1FD59A220021EBDC /* HomeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E001F52B1FD59A220021EBDC /* HomeCollectionViewCell.swift in Sources */,
 				E0DFFF391FD548120046522A /* NotificationsViewController.swift in Sources */,
 				E0DFFF271FD53DC70046522A /* ExploreViewController.swift in Sources */,
 				E0DFFF371FD547FF0046522A /* GalleryViewController.swift in Sources */,
