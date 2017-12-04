@@ -25,7 +25,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljf-f6-eBn" userLabel="Display Picture">
                                 <rect key="frame" x="0.0" y="50" width="375" height="200"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jkE-Eg-Umn" userLabel="User Profile Picture">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jkE-Eg-Umn" userLabel="User Profile Picture">
                                 <rect key="frame" x="8" y="8" width="34" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="34" id="Dh5-RC-Cnk"/>
@@ -42,10 +42,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrC-1V-dPw">
-                                <rect key="frame" x="329" y="10" width="34" height="34"/>
+                                <rect key="frame" x="329" y="6" width="34" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="mpn-kz-Snw"/>
-                                    <constraint firstAttribute="width" constant="34" id="rJw-7N-5dm"/>
+                                    <constraint firstAttribute="height" constant="34" id="smD-Jl-Qbb"/>
+                                    <constraint firstAttribute="width" constant="34" id="v6w-aG-hWS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="...">
@@ -55,19 +55,28 @@
                                     <action selector="didTapSettings:" destination="gTV-IL-0wX" eventType="touchUpInside" id="AV0-VC-L81"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtU-xi-bch" userLabel="Like">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtU-xi-bch" userLabel="Like">
                                 <rect key="frame" x="14" y="264" width="23" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8lR-eW-xfC"/>
+                                    <constraint firstAttribute="width" constant="23" id="jXc-bf-SOk"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="like"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-kG-SGZ" userLabel="Comment">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-kG-SGZ" userLabel="Comment">
                                 <rect key="frame" x="51" y="264" width="23" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="RWQ-qN-NkV"/>
+                                    <constraint firstAttribute="height" constant="22" id="ccv-TY-DhF"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="comment"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHD-47-chP" userLabel="Share">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHD-47-chP" userLabel="Share">
                                 <rect key="frame" x="88" y="264" width="23" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0g7-8I-4Vw"/>
+                                    <constraint firstAttribute="width" constant="23" id="nBg-iU-te3"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="send"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-30-7HX" userLabel="Bookmark">
@@ -83,19 +92,28 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="5iB-30-7HX" secondAttribute="bottom" constant="14" id="0nd-Wf-oSb"/>
                             <constraint firstAttribute="trailing" secondItem="ljf-f6-eBn" secondAttribute="trailing" id="583-ef-qrF"/>
+                            <constraint firstItem="8Cb-kG-SGZ" firstAttribute="leading" secondItem="jtU-xi-bch" secondAttribute="trailing" constant="14" id="8XA-ja-yv0"/>
                             <constraint firstItem="ljf-f6-eBn" firstAttribute="top" secondItem="VZk-Fm-8cS" secondAttribute="bottom" constant="14" id="B8O-a8-Lc7"/>
                             <constraint firstItem="jkE-Eg-Umn" firstAttribute="leading" secondItem="af7-jr-8Gq" secondAttribute="leading" constant="8" id="C6n-j3-d8r"/>
+                            <constraint firstAttribute="bottom" secondItem="8Cb-kG-SGZ" secondAttribute="bottom" constant="14" id="D53-Gh-j3t"/>
                             <constraint firstItem="ljf-f6-eBn" firstAttribute="top" secondItem="jkE-Eg-Umn" secondAttribute="bottom" constant="8" id="EWS-kN-mpO"/>
                             <constraint firstAttribute="bottom" secondItem="ljf-f6-eBn" secondAttribute="bottom" constant="50" id="HfG-1G-VDT"/>
+                            <constraint firstItem="jtU-xi-bch" firstAttribute="leading" secondItem="af7-jr-8Gq" secondAttribute="leading" constant="14" id="LBf-F6-HSE"/>
+                            <constraint firstAttribute="bottom" secondItem="jtU-xi-bch" secondAttribute="bottom" constant="14" id="P3W-bT-ll5"/>
                             <constraint firstAttribute="trailing" secondItem="5iB-30-7HX" secondAttribute="trailing" constant="23" id="QA3-Mu-8ZL"/>
                             <constraint firstItem="jkE-Eg-Umn" firstAttribute="top" secondItem="af7-jr-8Gq" secondAttribute="top" constant="8" id="WyP-Kc-PqA"/>
+                            <constraint firstItem="jtU-xi-bch" firstAttribute="top" secondItem="ljf-f6-eBn" secondAttribute="bottom" constant="14" id="X8E-Y9-k5g"/>
+                            <constraint firstAttribute="bottom" secondItem="SHD-47-chP" secondAttribute="bottom" constant="14" id="ZuA-Pe-IJ5"/>
                             <constraint firstItem="5iB-30-7HX" firstAttribute="top" secondItem="ljf-f6-eBn" secondAttribute="bottom" constant="14" id="dV2-gS-QCi"/>
-                            <constraint firstAttribute="trailing" secondItem="VrC-1V-dPw" secondAttribute="trailing" constant="12" id="eT1-Tp-Zbm"/>
-                            <constraint firstItem="VrC-1V-dPw" firstAttribute="top" secondItem="af7-jr-8Gq" secondAttribute="top" constant="10" id="lEA-O2-XZS"/>
+                            <constraint firstItem="SHD-47-chP" firstAttribute="leading" secondItem="8Cb-kG-SGZ" secondAttribute="trailing" constant="14" id="htQ-EK-soW"/>
+                            <constraint firstItem="VrC-1V-dPw" firstAttribute="top" secondItem="af7-jr-8Gq" secondAttribute="top" constant="6" id="k4s-zk-QWu"/>
                             <constraint firstItem="VZk-Fm-8cS" firstAttribute="leading" secondItem="jkE-Eg-Umn" secondAttribute="trailing" constant="8" id="lce-Ln-4VN"/>
-                            <constraint firstItem="ljf-f6-eBn" firstAttribute="top" secondItem="VrC-1V-dPw" secondAttribute="bottom" constant="6" id="rJd-kc-NyW"/>
+                            <constraint firstAttribute="trailing" secondItem="VrC-1V-dPw" secondAttribute="trailing" constant="12" id="q0W-0J-YDU"/>
                             <constraint firstItem="VZk-Fm-8cS" firstAttribute="top" secondItem="af7-jr-8Gq" secondAttribute="top" constant="15" id="syl-Ff-pXd"/>
                             <constraint firstItem="ljf-f6-eBn" firstAttribute="leading" secondItem="af7-jr-8Gq" secondAttribute="leading" id="tGZ-C1-7Us"/>
+                            <constraint firstItem="ljf-f6-eBn" firstAttribute="top" secondItem="VrC-1V-dPw" secondAttribute="bottom" constant="10" id="um3-ns-gGr"/>
+                            <constraint firstItem="SHD-47-chP" firstAttribute="top" secondItem="ljf-f6-eBn" secondAttribute="bottom" constant="14" id="vwG-3t-J2F"/>
+                            <constraint firstItem="8Cb-kG-SGZ" firstAttribute="top" secondItem="ljf-f6-eBn" secondAttribute="bottom" constant="14" id="yYN-Ub-sAC"/>
                         </constraints>
                     </view>
                 </subviews>

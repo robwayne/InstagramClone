@@ -179,7 +179,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nwU-D5-uky"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" image="like" id="xPM-Df-A6f"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notification-heart" id="xPM-Df-A6f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcl-2u-3pM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -209,8 +209,8 @@
     </scenes>
     <resources>
         <image name="home" width="21" height="21"/>
-        <image name="like" width="85" height="85"/>
         <image name="magnifying-glass" width="21" height="21"/>
+        <image name="notification-heart" width="21" height="21"/>
         <image name="plus" width="21" height="21"/>
     </resources>
 </document>
