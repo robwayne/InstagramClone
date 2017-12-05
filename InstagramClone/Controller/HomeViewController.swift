@@ -19,6 +19,13 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cardNib = UINib(nibName: "HomeCollectionViewCell", bundle: nil)
         collectionView.register(cardNib, forCellWithReuseIdentifier: "homeCardCell")
         
+        let flowLayout = UICollectionViewFlowLayout()
+        let cardWidth = UIScreen.main.bounds.width
+        let cardHeight = UIScreen.main.bounds.height*0.6
+        flowLayout.itemSize = CGSize(width: cardWidth, height: cardHeight)
+        flowLayout.minimumLineSpacing = 10
+        collectionView.collectionViewLayout = flowLayout
+        
     }
 
     override func didReceiveMemoryWarning() {

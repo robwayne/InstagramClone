@@ -13,17 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCardCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="InstagramClone" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="af7-jr-8Gq" userLabel="Parent View">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljf-f6-eBn" userLabel="Display Picture">
-                                <rect key="frame" x="0.0" y="50" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="300"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jkE-Eg-Umn" userLabel="User Profile Picture">
                                 <rect key="frame" x="8" y="8" width="34" height="34"/>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtU-xi-bch" userLabel="Like">
-                                <rect key="frame" x="14" y="264" width="23" height="22"/>
+                                <rect key="frame" x="14" y="364" width="23" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="8lR-eW-xfC"/>
                                     <constraint firstAttribute="width" constant="23" id="jXc-bf-SOk"/>
@@ -64,7 +64,7 @@
                                 <state key="normal" title="Button" image="like"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-kG-SGZ" userLabel="Comment">
-                                <rect key="frame" x="51" y="264" width="23" height="22"/>
+                                <rect key="frame" x="51" y="364" width="23" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="RWQ-qN-NkV"/>
                                     <constraint firstAttribute="height" constant="22" id="ccv-TY-DhF"/>
@@ -72,7 +72,7 @@
                                 <state key="normal" title="Button" image="comment"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHD-47-chP" userLabel="Share">
-                                <rect key="frame" x="88" y="264" width="23" height="22"/>
+                                <rect key="frame" x="88" y="364" width="23" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="0g7-8I-4Vw"/>
                                     <constraint firstAttribute="width" constant="23" id="nBg-iU-te3"/>
@@ -80,7 +80,7 @@
                                 <state key="normal" title="Button" image="send"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-30-7HX" userLabel="Bookmark">
-                                <rect key="frame" x="329" y="264" width="23" height="22"/>
+                                <rect key="frame" x="329" y="364" width="23" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Li0-Ei-tUf"/>
                                     <constraint firstAttribute="width" constant="23" id="fVL-6d-DqW"/>
@@ -131,7 +131,7 @@
                 <outlet property="userProfilePictureView" destination="jkE-Eg-Umn" id="fSs-Tl-Ydx"/>
                 <outlet property="usernameLabel" destination="VZk-Fm-8cS" id="sYY-jn-UbE"/>
             </connections>
-            <point key="canvasLocation" x="86" y="-92"/>
+            <point key="canvasLocation" x="72" y="-312"/>
         </collectionViewCell>
     </objects>
     <resources>
